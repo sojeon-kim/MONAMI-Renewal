@@ -1,0 +1,188 @@
+/* 
+*{
+    border: 1px solid royalblue !important;
+} */
+
+
+/* 메인비주얼 */
+#mv_wrap{
+    height: 575px;
+    position: relative;
+}
+#mv_wrap .swiper-slide{
+    overflow: hidden;
+    /* 다음 슬라이드가 위로 올라오는 것을 안보이게 처리하기 위한 코딩 */
+}
+#mv_wrap .swiper-slide img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 위 두줄 사진 가운데 정렬 */
+}
+#mv_wrap .inner{
+    position: absolute;
+    top: 111px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+}
+#mv_wrap .inner h2{
+    font-size: 50px;
+}
+#mv_wrap .inner p{
+    font-size: 18px;
+    padding-top: 30px;
+}
+#mv_wrap .inner .mobile_view{
+    display: none;
+}
+/* 메인비주얼 스와이퍼 */
+#mv_wrap #mv2 .inner{
+    color: #303030;
+}
+#mv_wrap .swiper-pagination-bullets.swiper-pagination-horizontal{
+    text-align: left;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1180px;
+    bottom: 109px;
+}
+#mv_wrap .swiper-pagination-bullet{
+    background: #ebe9e9;
+    border-radius: 0;
+    width: 50px;
+    height: 5px;
+    opacity: 1;
+}
+#mv_wrap .swiper-pagination-bullet:first-child{
+    margin-left: 0;
+}
+#mv_wrap .swiper-pagination-bullet-active{
+    background: #52bbb4;
+    opacity: 1;
+}
+/* 프로덕트 */
+#product .graybox{
+    width: calc(50% - 10px);
+    float: left;
+    height: calc(30.2083vw + 172px);
+    max-height: 529px;
+    /* height: 529px; */
+}
+#product .graybox img{
+    width: 100%;
+}
+#product .graybox:first-child{
+    margin-left: 0;
+}
+#product .graybox h3 br{
+    display: none;
+}
+#product .graybox .txt a{
+    margin-top: 35px;
+
+}
+/* 뉴스 */
+#news .box_title, #news .graybox{
+    width: calc(33.333% - (40px/3));
+    max-height: 445px;
+    height: calc(19.7916vw + 214px);
+    float: left;
+}
+
+#news .graybox img{
+    width: 100%;
+}
+
+#news .txt a{
+    margin-top: 70px;
+}
+/* 채용 */
+#recruit{
+    height: 606px;
+    background: url(../img/recruit.jpg) no-repeat center / cover fixed;
+}
+#recruit .inner{
+    height: 100%;
+}
+#recruit .box_title{
+    float: right;
+    width: calc(33.333% - (40px/3));
+    padding: 76px 13px 0 30px;
+    height: 100%;
+    background:rgba(82, 187, 180, 0.85);
+}
+#recruit .box_title a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 170px;
+    height: 60px;
+    line-height: 56px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 28px;
+    transition: all 0.4s;
+}
+#recruit .box_title a:hover{
+    background: #fff;
+    color: #52bbb4;
+}
+
+/* 비디오 */
+
+#video_play video{
+    max-width: 100%;
+    height: 100%;
+}
+/* SERVICE */
+#service{
+    height: 370px;
+}
+#service .inner{
+    height: 100%;
+}
+#service .inner div{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: calc(33.333% - (40px/3));
+    margin-left: 20px;
+}
+#service .inner div:first-child{
+    margin-left: 0;
+}
+#service .inner img{
+    width: 100%;
+    height: 100%;
+}
+#service a{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 20px;
+    background: url(../img/arrow.png) no-repeat 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s;
+}
+
+#service a:hover{
+    background: url(../img/arrow.png) no-repeat 93%;
+    background-color: rgba(0, 0, 0, 1);
+}
+#service a span{
+    font-family: 'HSGyeoulNoonkott20';
+    font-size: 20px;
+    font-weight: 400;
+}
+

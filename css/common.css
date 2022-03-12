@@ -1,0 +1,327 @@
+/* 폰트 */
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+}
+
+@font-face {
+    font-family: 'HSGyeoulNoonkott20';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HSGyeoulNoonkott20.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통 */
+.inner{
+    max-width: 1180px;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section:not(#mv_wrap){
+    margin-top: 60px;
+}
+
+/* gnb 메뉴 */
+header{
+    height: 81px;
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    z-index: 9;
+    /* 위 2줄 : 메인비주얼에 relative줘서 메뉴 배경이 사라지는 현상을 방지하기 위해 코딩 */
+}
+header .inner{
+    height: 100%;
+}
+header .gnb{
+    height: 100%;
+    position: relative;
+}
+header .gnb h1{
+    display: inline-block; /* h1의 크기를 img크기만큼 줄이기 위해 필요한 코딩 */
+    margin-top: 16px;
+}
+header .gnb h1 a{
+    display: block;
+}
+.gnb nav{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.gnb nav .main_menu>li{
+    display: block;
+    float: left;
+    padding: 0 15px;
+    padding-bottom:20px;
+    position: relative;
+
+}
+
+.gnb nav .main_menu li:nth-last-child(2){
+    padding: 0 40px 20px 40px;
+    /* '모나미 패밀리샵 찾기'때문에 닥독으로 패딩값을 다르게 줌 */
+}
+.gnb nav .main_menu>li:last-child>a{
+    margin-right: 0;
+
+}
+.gnb nav .main_menu>li>a{
+    position: relative;
+}
+.gnb nav .main_menu>li>a::before{
+    content: "";
+    width: 1px;
+    height: 21px;
+    left: -2px;
+    background: rgb(82, 187, 180, 0.8);
+    position: absolute;
+    transition: all 0.4s;
+}
+.gnb nav .main_menu>li:hover>a::before{
+    width: calc(100% + 2px);
+    background: rgb(82, 187, 180, 0.5);
+    z-index: -1;
+}
+/* 하위메뉴 */
+.gnb nav .main_menu li .sub_menu{
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    height: 370px;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding-top: 15px;
+}
+.gnb nav .main_menu:hover li .sub_menu{
+    display: block;
+}
+.gnb nav .main_menu li .sub_menu li{
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.gnb nav .main_menu li .sub_menu li a{
+    position: relative;
+}
+.gnb nav .main_menu li .sub_menu li:hover a::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 1px;
+    background: rgba(82, 187, 180, 0.5);
+    z-index: -1;
+}
+/* 서브메뉴 백그라운드 */
+nav .main_menu+.sub_bg{
+    background: rgba(255, 255, 255, 0.8);
+    height: 371px;
+    width: 100%;
+    text-indent: -999px;
+    overflow: hidden;
+    font-size: 0;
+    display: none;
+}
+.gnb nav .main_menu:hover+.sub_bg{
+    display: block;
+}
+/* 햄버거 버튼 */
+.gnb .hamburger_btn{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: none;
+}
+.gnb .hamburger_btn span{
+    width: 25px;
+    height: 4px;
+    display: block;
+    background: #52bbb4;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+}
+/* 그레이박스 */
+.graybox{
+    font-size: 16px;  
+    background: #eeeced;
+    border-bottom: 6px solid #303030;
+    margin-left: 20px;
+    display: block;
+    transition: border-bottom-color 0.4s;
+    position: relative;
+
+}
+.graybox:hover{
+    border-bottom-color:#52bbb4;
+    
+}
+.graybox .txt{
+    padding: 26px 5px 0 30px;
+}
+.graybox h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.graybox p{
+    padding-top: 15px;
+}
+.graybox span{
+    background: url(../img/btn.png) no-repeat 0;
+    display: block;
+    text-indent: 29px;
+    height: 21px;
+    line-height: 21px;
+    bottom: 30px;
+    position: absolute;
+}
+
+
+/* 박스 타이틀 */
+.box_title{
+    background: #52bbb4;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    height: 445px;
+    padding: 63px 30px 0 30px;
+
+}
+.box_title h3{
+    font-size: 36px;
+    padding-bottom: 36px;
+    line-height: 1.28;
+    position: relative;
+}
+
+.box_title h3::after{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+.box_title p{
+    padding-top: 32px;
+    display: block;
+    line-height: 1.6;
+}
+
+/* 푸터 */
+footer{
+    margin-top: 60px;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+footer .inner{
+    padding: 58px 0;
+
+}
+footer .footer_top{
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+footer .footer_top span{
+    background: url(../img/footer_logo.jpg) no-repeat;
+    display: block;
+    width: 128px;
+    height: 32px;
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+    
+}
+footer .footer_top ul{
+    position: absolute;
+    float: left;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+}
+footer .footer_top ul li{
+    display: inline-block;
+    position: relative;
+    padding: 0 min(2.05vw,14px);
+}
+footer .footer_top ul li:last-child{
+    padding-right: 0;
+}
+footer .footer_top ul li a{
+    color: #fff;
+}
+footer .footer_top ul li a::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    top: 3px;
+    right: -6px;
+    position: absolute;
+}
+footer .footer_top ul li:last-child a::after{
+    display: none;
+}
+footer .footer_bottom{
+    margin-top: 24px;
+    position: relative;
+}
+footer .footer_bottom div{
+    float: left;
+}
+footer .footer_bottom div{
+    margin-right: 52px;
+}
+footer .footer_bottom select{
+    right: 0;
+}
+footer .footer_bottom .address p:nth-child(2){
+    font-size: 14px;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+footer .footer_bottom .address p:nth-child(3){
+    font-size: 13px;
+    padding-top: 5px;
+    opacity: 0.8;
+}
+footer .footer_bottom .customer_center span{
+    display: block;
+    font-size: 28px;
+    padding-top: 5px;
+    opacity: 0.8;
+}
+footer .footer_bottom select{
+    position: absolute;
+    background: #111;
+    color: #fff;
+    width: 242px;
+    height: 34px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 0;
+    opacity: 0.8;
+}

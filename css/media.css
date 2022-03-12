@@ -1,0 +1,473 @@
+/* 1920 -> (1280) -> 960 -> (680) -> 480 */
+@media screen and (max-width: 1280px){
+    .gnb nav .main_menu>li{
+        padding: 0 10px 20px 10px;
+    }
+    .gnb nav .main_menu>li:last-child {
+        padding: 0;
+    }
+    /* 메인비주얼 */
+    #mv_wrap .inner h2{
+        font-size: 45px;
+    }
+    #mv_wrap .swiper-slide img {
+        transform: translateX(-56%);
+    }
+    #mv_wrap .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 60px;
+    }
+    
+    /* 프로덕트 */
+    #product .graybox{
+        height: calc(35.9375vw + 134px);
+    }
+    #product .graybox h3 br{
+        display: block;
+    }
+    #product .graybox:last-child p{
+        display: none;
+    }
+   /* 뉴스 */
+   .graybox .txt{
+        padding-left: 20px;
+   }
+   .graybox h3{
+       font-size: 20px;
+    }
+    /* 채용 */
+    #recruit{
+        background-position: center;
+    }
+    #recruit .inner{
+        width: 100%;
+        height: 100%;
+    }
+    #recruit .box_title h3{
+        font-size: min(2.8125vw, 22px);
+    }
+    /* 서비스 */
+    #service{
+        height: 31.25vw;
+    }
+    #service a{
+        font-size: 13px;
+    }
+    /* 푸터 */
+    footer .footer_bottom div{
+        margin-right: 1.953vw;
+        font-size: 1.171875vw;
+    }
+    footer .footer_bottom .customer_center span{
+        font-size: 2.1875vw;
+    }
+}
+
+
+
+@media screen and (max-width: 960px){
+    /* common */
+    .box_title h3{
+        font-size: 27px;
+    }
+    /* 헤더 */
+    header{
+        height: 60px;
+    }
+    header .gnb h1{
+        margin: 12px 0 0 20px;
+    }
+    header .gnb h1 img{
+        width: 121px;
+        height: 38px;
+    }
+    .gnb nav{
+        display: none;
+    }
+    .gnb .hamburger_btn{
+        display: block;
+    }
+    /* 메인비주얼 */
+    #mv_wrap{
+        /* height: 36.1458vw; */
+        max-height: 348px;
+    }
+    #mv_wrap .inner{
+        top: 35px;
+        margin-left: 40px;
+    }
+    #mv_wrap .inner h2{
+        font-size: 30px;
+    }
+    #mv_wrap .inner p{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    #mv_wrap .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 40px;
+        text-align: center;
+    }
+    /* 프로덕트 */
+    #product .graybox{
+        height: calc(35.9375vw + 134px);
+        max-height: 429px;
+    }
+    #product .graybox h3{
+        line-height: 1.29;
+    }
+    #product .graybox .txt span{
+        bottom: 24px;
+        font-size: 13px;
+    }
+    /* 뉴스 */
+    #news .box_title{
+        padding: 60px 30px 0 38px;
+    }
+    #news .box_title, #news .graybox{
+        max-height: 387px;
+        height: calc(23.25vw + 214px);
+        /* 높이를 줄이기 위해 23.25vw임의로 넣어줌 원래값:31.25vw */
+    }
+    
+    #news .box_title p{
+        font-size: 15px;
+    }
+    #news .graybox h3 br{
+        display: none;
+    }
+    #news .graybox span{
+        font-size: 13px;
+    }
+    /* 채용 */
+    #recruit{
+        height: 524px;
+    }
+    #recruit .box_title{
+        width: 470px;
+        padding: 56px 13px 0 29px;
+    }
+    #recruit .box_title h3{
+        padding-bottom: 19px;
+        font-size: 27px;
+    }
+    #recruit .box_title p{
+        font-size: 15px;
+        padding-top: 27px;
+    }
+    #recruit .box_title a{
+        width: 140px;
+        height: 50px;
+        line-height: 46px;
+        font-size: 15px;
+    }
+    /* 푸터 */
+    footer .footer_top ul{
+        font-weight: 700;
+    }
+    footer .footer_bottom div{
+        float: none;
+    }
+    footer .footer_bottom .customer_center{
+        display: inline-block;
+        font-size: 13px;
+        padding-top: 28px;
+    }
+    footer .footer_bottom .customer_center br{
+        display: none;
+    }
+    footer .footer_bottom .customer_center span::before{
+        content: "";
+        display: block;
+        background: #fff;
+        width: 1px;
+        height: 10px;
+        left: -11px;
+        bottom: 2px;
+        position: absolute;
+    }
+    footer .footer_bottom .customer_center span{
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 22px;
+        position: relative;
+
+    }
+    footer .footer_bottom .address p:nth-child(2){
+        font-size: 13px;
+    }
+    footer .footer_bottom select{
+        width: 44.85vw;
+        height: 25px;
+        bottom: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 680px){
+    /* common */
+    section:not(#mv_wrap) {
+        margin-top: 40px;
+    }
+    .inner{
+        width: calc(100% - 36px);
+    }
+    .graybox h3{
+        font-size: 3.235vw;
+    }
+    .graybox .txt{
+        padding: 17px 5px 0 12px;
+    }
+    /* 헤더 */
+    header .gnb h1{
+        margin: 8px 0;
+    }
+    .gnb .hamburger_btn{
+        top: 20px;
+        right: 0;
+    }
+    /* 메인비주얼 */
+    #mv_wrap #mv3 img {
+        transform: translateX(-68%);
+        /* 이미지를 강조하기 위해 이동시킴 */
+    }
+    
+    #mv_wrap .inner {
+        top: 35px;
+        margin-left: 10px;
+    }
+    #mv_wrap .swiper-wrapper div:last-child .inner{
+        width: 100%;
+        top: 0;
+        height: 100%;
+        margin-left: 0;
+        background: linear-gradient(90deg, rgb(61, 66, 96) 12%, transparent);
+        /* 글씨 강조하기 위해 그라디언트 효과 넣음 */
+        padding: 0 30px;
+    }
+    #mv_wrap .swiper-wrapper div:last-child .inner h2{
+        padding-top: 35px;
+    }
+    #mv_wrap .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 30px;
+    }
+    
+    /* 프로덕트 */
+    #product .graybox{
+        height: calc(30.9375vw + 134px);
+    }
+    
+    
+    #product .graybox h3 br{
+        display: none;
+    }
+    #product .graybox .txt span{
+        font-size: 13px;
+        bottom: 17px;
+    }
+    /* 뉴스 */
+    #news .inner{
+        width: 100%;
+    }
+    #news .box_title{
+        width: 100%;
+        left: 0;
+    }
+    #news .box_title h3{
+        font-size: 33px;
+    }
+    #news .box_title p{
+        font-size: 18px;
+    }
+    #news .graybox{
+        margin: -50px 10px 0 18px;
+        width: calc(50% - 28px);
+    }
+    /* 채용 */
+    #recruit{
+        background-position: center;
+    }
+    #recruit .inner{
+        padding: 5vw 18px;
+    }
+    #recruit .box_title{
+        float: none;
+        height: 100%;
+        width: 100%;
+        padding: 6.617vw 13px 0 29px;
+    }
+    /* 푸터 */
+    footer .footer_top ul{
+        float: none;
+        position: initial;
+        padding-top: 15px;
+    }
+    footer .footer_top ul li:first-child{
+        padding-left: 0;
+    }
+    footer .footer_bottom select{
+        position: initial;
+        width: 100%;
+        margin-top: 20px;
+    }
+    footer .footer_bottom .address{
+        display: none;
+    }
+    footer .footer_bottom::before{
+        content: "ADDRESS : 경기도 용인시 수지구 손곡로 17 \a TEL : 031-216-0153   l   FAX : 031-270-5154\a COPYRIGHT(C) 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED.";
+        /* content에서 줄을 바꿀 때에는 \a를 입력한 후 whith-spce:pre를 적는다. */
+        white-space: pre;
+        display: block;
+        padding-top: 5px;
+        line-height: 1.4;
+        opacity: 0.8;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+/* common */
+    .graybox h3{
+        font-size: 5.2083vw;
+    }
+    .graybox span{
+        height: 23px;
+        line-height: 23px;
+        position: initial;
+        margin: 27px 0;
+    }
+    /* 메인비주얼 */
+    #mv_wrap .inner{
+        margin-left: 20px;
+    }
+    #mv_wrap .inner h2{
+        display: none;
+    }
+    #mv_wrap #mv1 .mobile_view{
+        display: block;
+        font-size: 33px;
+        font-weight: 700;
+    }
+    #mv_wrap #mv2 .mobile_view{
+        display: block;
+        font-size: 33px;
+        font-weight: 700;
+    }
+    #mv_wrap #mv2 img{
+        transform: translateX(-65%);
+    }
+    #mv_wrap #mv3 .mobile_view{
+        display: block;
+        font-size: 33px;
+        font-weight: 700;
+        padding-top: 35px;
+    }
+    #mv_wrap #mv3 img{
+        transform: translateX(-65%);
+    }
+    #mv_wrap .inner p{
+        display: none;
+    }
+   
+    /* 프로덕트 */
+    #product .graybox{
+        width: 100%;
+        height: auto;
+        float: initial;
+        margin-left: 0;
+    }
+    #product .graybox:first-child{
+        margin-bottom: 20px;
+    }
+    #product .graybox p{
+        font-size: 18px;
+    }
+
+    /* 뉴스 */
+    #news .box_title, #news .graybox{
+        float: none;
+    }
+    #news .box_title{
+        padding: 50px 30px 0 38px;
+        height: 480px;
+    }
+    #news .graybox{
+        width: calc(100% - 38px);
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
+    }
+    #news .graybox:nth-child(2){
+        margin-top: -110px;
+    }
+    #news .graybox:nth-child(3){
+        margin-top: 42px;
+    }
+    #news .graybox h3 br{
+        display: block;
+    }
+    /* 채용 */
+    #recruit{
+        height: 560px;
+    }
+    #recruit .box_title{
+        height: 100%;
+    }
+    #recruit .box_title p{
+        padding-top: 27px;
+    }
+    #recruit .box_title a{
+        margin-top: 55px;
+    }
+    /* 서비스 */
+    #service{
+        height: initial;
+    }
+    #service .inner div{
+        float: none;
+        width: 100%;
+        height: 268px;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+    #service .inner div:first-child{
+        background: url(../img/inklab_mb.jpg) no-repeat center;
+    }
+    #service .inner div:nth-child(2){
+        background: url(../img/INQUIRY_mb.jpg) no-repeat center;
+    }
+    #service .inner div:last-child{
+        background: url(../img/store_mb.jpg) no-repeat center;
+    }
+    #service .inner div:last-child{
+        margin-bottom: 0;
+    }
+    #service .inner img{
+        display: none;
+    }
+    /* 푸터 */
+    footer{
+        margin-top: 40px;
+    }
+    footer .inner{
+        padding: 19px 0;
+    }
+    footer .footer_top ul{
+        font-size: 3.75vw;
+    }
+    footer .footer_top ul li{
+        padding: 0 7px
+    }
+    footer .footer_top ul li a::after{
+        height: 15px;
+        right: -4px;
+    }
+    
+    footer .footer_bottom::before{
+        font-size: 2.7vw;
+    }
+    footer .footer_bottom .customer_center{
+        padding-top: 20px;
+        opacity: 0.8;
+    }
+    
+}
